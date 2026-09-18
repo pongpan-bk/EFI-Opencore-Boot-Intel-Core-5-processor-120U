@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+._*
+.AppleDouble
+*~
+Thumbs.db (ไม่มีจริง แต่กันไว้)
+
+# OpenCore boot logs (debug)
+opencore-*.txt
+*.log
+
+# IDE / OS junk
+.idea/
+.vscode/
+desktop.ini
