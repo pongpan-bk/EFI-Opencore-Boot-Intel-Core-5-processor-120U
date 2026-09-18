@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+    <key>CFBundleExecutable</key>
+    <string>IntelXeMetal</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.intel.metal.IntelXeMetal</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>Intel Xe Metal Plugin</string>
+    <key>CFBundlePackageType</key>
+    <string>BNDL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.0</string>
+    <key>CFBundleVersion</key>
+    <string>100</string>
+    
+    <key>IOKitPersonalities</key>
+    <dict>
+        <key>IntelXeMetalPlugin</key>
+        <dict>
+            <key>CFBundleIdentifier</key>
+            <string>com.intel.metal.IntelXeMetal</string>
+            <key>IOClass</key>
+            <string>IntelXeMetalPlugin</string>
+            <key>IOMatchCategory</key>
+            <string>IOGraphicsAccelerator</string>
+            <key>IOProviderClass</key>
+            <string>IntelXeAccelerator</string>
+            
+            <!-- Metal Capabilities -->
+            <key>MetalPluginClassName</key>
+            <string>IntelXeMetalPlugin</string>
+            <key>MetalFeatureSet</key>
+            <string>macOS_GPUFamily2_v1</string>
+            <key>MetalVersion</key>
+            <string>3.0</string>
+            
+            <!-- Device Info -->
+            <key>MetalDeviceName</key>
+            <string>Intel Iris Xe Graphics</string>
+            <key>MetalDeviceVendor</key>
+            <string>Intel Corporation</string>
+            
+            <!-- Capabilities -->
+            <key>MetalMaxTextureSize</key>
+            <integer>16384</integer>
+            <key>MetalMaxBufferLength</key>
+            <integer>1073741824</integer>
+            <key>MetalMaxThreadsPerThreadgroup</key>
+            <integer>1024</integer>
+            
+            <!-- Feature Support -->
+            <key>MetalSupportsRayTracing</key>
+            <true/>
+            <key>MetalSupportsMeshShaders</key>
+            <true/>
+            <key>MetalSupportsTileShaders</key>
+            <true/>
+            <key>MetalSupportsVariableRateShading</key>
+            <true/>
+        </dict>
+    </dict>
+    
+    <key>OSBundleLibraries</key>
+    <dict>
+        <key>com.apple.iokit.IOGraphicsFamily</key>
+        <string>600.0.0</string>
+        <key>com.apple.iokit.IOAcceleratorFamily2</key>
+        <string>500.0.0</string>
+        <key>com.apple.kpi.libkern</key>
+        <string>23.0.0</string>
+        <key>com.apple.kpi.iokit</key>
+        <string>23.0.0</string>
+    </dict>
+    
+    <key>NSHumanReadableCopyright</key>
+    <string>Copyright © 2026 Intel Corporation. All rights reserved.</string>
+    <key>OSBundleAllowUserLoad</key>
+    <true/>
+</dict>
+</plist>
